@@ -1,5 +1,5 @@
 <?php
-    include 'person.inc.php';
+    include 'newclass.php';
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -11,19 +11,10 @@
 </head>
 <body>
     <?php
-        $person1 = new Person("Sunnatillo", "Black", 31);
-    // echo $person1->name;
-        echo "<br>";
-      //  echo $person1->eyecolour;
-        echo "<br>";
-
-        echo $person1->getName();
-      
-
-     //   $person1->setName("Jaxon");
-      //  echo $person1->name;
-
+        $object = new NewClass;
+        unset($object);
+        echo $object->getProperty();
         
-    ?>
+?>
 </body>
 </html>
