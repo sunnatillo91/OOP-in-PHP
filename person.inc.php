@@ -1,23 +1,13 @@
 <?php
 
 class Person {
-    //Properties
-    private $name;
-    private $eyecolour;
-    private $age;
-
-    public function __construct($name, $eyecolor, $age) {
-        $this->name = $name;
-        $this->eyecolour = $eyecolor;
-        $this->age = $age;
-    }
-           
-    
-    //Methods
-    public function setName($name) {
-        $this->name = $name;
-    }
-    public function getName() {
-       return $this->name;
-    }
+    public $first = "Daniel";
+    private $last = "Nielsen";
+    private $age = "28";
 }
+    class Pet extends Person {
+        public function owner() {
+        $a = $this->first;
+        return $a;
+    }
+    }
